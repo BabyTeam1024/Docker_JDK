@@ -1,0 +1,9 @@
+version: '3'
+services:
+ jdk:
+   build:
+    context: .
+    args:
+      JDK: ${jdk} 
+      JDKPATH: ${jdkpath}
+   tty: true
